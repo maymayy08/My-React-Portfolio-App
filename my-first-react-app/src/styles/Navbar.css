@@ -1,0 +1,76 @@
+/* NavBar.css */
+body {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  background: linear-gradient(#ADB2D4, #C7D9DD);
+  padding: 10px 0; /* Added padding */
+  font-weight: bold;
+  border: 5px solid #20b2aa;
+  border-radius: 2%;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 1rem;
+  margin-top: 15px;
+}
+
+.navbar-center .nav-links a {
+  position: relative;
+  color: black; 
+  text-decoration: none;
+}
+
+/* Underline Animation */
+.navbar-center .nav-links a::after {
+  content: ''; 
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 0%; 
+  height: 2px; 
+  background-color: #20B2AA;
+  transition: width 0.3s ease-in-out; 
+}
+
+.navbar-center .nav-links a:hover::after {
+  width: 100%; 
+}
+
+.navbar-center .nav-links a:hover {
+  color: #20B2AA; 
+  transition: color 0.3s ease-in-out; 
+}
+
+.navbar-logo-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 20%;
+  border: 2px solid black;
+}
+
+/* Adjustments for when navbar is fixed */
+body {
+  padding-top: 80px; 
+}

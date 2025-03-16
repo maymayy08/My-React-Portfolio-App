@@ -1,0 +1,16 @@
+.footer {
+    background: linear-gradient(#adb2d4, #c7d9dd);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    height: 60px; 
+    margin-top: 820px;
+  }
+  
+  /* Media query for smaller screens (mobile) */
+  @media (max-width: 768px) {
+    .footer {
+      margin-top: 735px;
+      position: sticky;
+    }
+  }
